@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="mainraper">
+            <div class="heading">
+                <H1>Stop Watch</H1>
+            </div>
+
+            <div class="wrapper" id="wrapper">
+                <h1 id="min">0</h1>
+                <h1>:</h1>
+                <h1 id="sec">0</h1>
+                <h1>:</h1>
+                <h1 id="msec">0</h1>
+            </div>
+            <div class="footer">
+                <button id="myBtn" onclick="start() , disableBtn()" class="btn">Start</button>
+                <button onclick="stop()" class="btn">Stop</button>
+                <button onclick="reset()" class="btn">Reset</button>
+            </div>
+            <div class="split_row">
+                <button class="split_btn" id="splitBtn" onclick="add()">Split</button>
+            </div>
+            <div class="split_main">
+
+                <h1>Split times</h1>
+                <hr>
+                <ul id="ulList" class="ullist">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
